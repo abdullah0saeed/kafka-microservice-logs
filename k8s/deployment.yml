@@ -96,9 +96,5 @@ spec:
               value: "zookeeper-service:2181"
             - name: KAFKA_ADVERTISED_LISTENERS
               value: "PLAINTEXT://kafka-service:9092"
-            - name: KAFKA_LISTENER_SECURITY_PROTOCOL
-              value: "PLAINTEXT"
-            - name: KAFKA_LISTENERS
-              value: "PLAINTEXT://0.0.0.0:9092"
             - name: KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR
               value: "1"
