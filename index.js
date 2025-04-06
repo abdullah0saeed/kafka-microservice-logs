@@ -7,6 +7,10 @@ app.use(express.json());
 
 app.use("/api/logs", require("./src/routes/logRouter"));
 
+app.use("/", (req, res) => {
+  res.send("Welcome to the Kafka logger service!");
+});
+
 const PORT = process.env.PORT || 3000;
 
 mongoose

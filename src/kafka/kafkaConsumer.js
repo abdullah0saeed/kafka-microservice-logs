@@ -20,7 +20,7 @@ exports.kafkaConsumer = async () => {
         const log = JSON.parse(message.value.toString());
 
         await LogModel.create(log);
-        console.log("Message received and saved to MongoDB:", log);
+        console.log("Message received and saved to MongoDB");
       },
     });
   } catch (error) {

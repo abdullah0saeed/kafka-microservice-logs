@@ -23,7 +23,7 @@ exports.kafkaProducer = async (log) => {
     };
 
     await producer.send(message);
-    console.log("Message sent successfully:", log);
+    console.log("Message sent successfully");
   } catch (error) {
     console.error("Error sending message to Kafka:", error);
   } finally {
